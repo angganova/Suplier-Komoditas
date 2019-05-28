@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00f7ff">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/scrollView2" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/icon_sastroman"
+                android:layout_marginTop="10dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:orientation="vertical"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Sastroman Suplier"
+                    android:id="@+id/tvPerusahaan"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="9dp"
+                    android:textSize="30dp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="8dp">
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageButton"
+                        android:background="@drawable/ic_action_address"
+                        android:layout_marginRight="10dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="Jln. Arwana No. 03 "
+                        android:id="@+id/tvAlamat"
+                        android:layout_gravity="center" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Nambangan Kidul"
+                    android:id="@+id/textView"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="7dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Madiun"
+                    android:id="@+id/textView2"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="6dp" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageView2"
+                        android:background="@drawable/ic_action_wa" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageView3"
+                        android:background="@drawable/ic_action_sms"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="085725582135"
+                        android:id="@+id/tvNo"
+                        android:layout_gravity="center" />
+                </LinearLayout>
+
+                <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Syarat dan Ketentuan"
+                    android:id="@+id/btSyarat"
+                    android:textColor="@color/btn_login"
+                    android:layout_gravity="center"
+                    android:visibility="visible"
+                    android:background="@color/btn_login_bg"
+                    android:layout_marginTop="10dp" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView"
+        android:background="#ffffff"
+        android:visibility="gone" />
+
+</RelativeLayout>

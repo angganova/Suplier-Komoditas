@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tvempty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="@string/emptylv"
+        android:textSize="25sp"
+        android:visibility="gone"
+        android:layout_centerInParent="true" />
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pb"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:indeterminate="false"
+        android:visibility="visible" />
+
+    <ListView
+        android:id="@+id/lvitem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:divider="@color/list_divider"
+        android:dividerHeight="1dp"
+        android:listSelector="@drawable/list_row_selector"
+        android:visibility="visible"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/LLT">
+    </ListView>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/LLT"
+        android:background="@color/colorPrimary"
+        android:layout_centerHorizontal="true"
+        android:visibility="visible"
+        android:layout_alignParentBottom="true">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:visibility="visible">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ivpay"
+                android:visibility="visible"
+                android:layout_gravity="center"
+                android:background="@drawable/ic_action_dev" />
+        </FrameLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvDev"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:visibility="visible"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/rating"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvTot"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold"
+                android:visibility="visible"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/rating" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total :"
+                android:id="@+id/textView3"
+                android:layout_alignTop="@+id/tvTot"
+                android:layout_toLeftOf="@+id/tvTot"
+                android:layout_toStartOf="@+id/tvTot"
+                android:textStyle="bold"
+                android:visibility="visible"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/rating"
+                android:layout_centerVertical="true" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

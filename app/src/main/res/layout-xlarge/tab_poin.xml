@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00f7ff">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/RLPoin"
+        android:visibility="visible"
+        android:background="#ffffff">
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/pb"
+            android:layout_centerInParent="true"
+            android:visibility="visible" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Poin Anda :"
+                        android:id="@+id/textView8"
+                        android:layout_marginRight="20dp"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#ffffff" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="000"
+                        android:id="@+id/tvPoin"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#ffffff" />
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <ListView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/lvpoin"
+                android:background="#ffffff"
+                android:visibility="gone" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

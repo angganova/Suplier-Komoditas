@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">Sastroman</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_search">Search</string>
+    <string name="action_profile">Data Profile</string>
+    <string name="action_order">Order</string>
+    <string name="action_logout">Logout</string>
+    <string name="action_time">Waktu Pengiriman</string>
+    <string name="action_shipping">Order</string>
+    <string name="action_plus">Tambah</string>
+    <string name="action_orderlist">Order History</string>
+    <string name="action_delete">Delete</string>
+    <string name="action_delivered">Delivered</string>
+
+    <string name="title_activity_profile">Data Profile</string>
+    <string name="title_activity_login">Login</string>
+    <string name="title_activity_sign_up">SignUp</string>
+    <string name="title_activity_splash">splash</string>
+    <string name="title_activity_order">Order</string>
+    <string name="title_activity_orderlist">Riwayat Order</string>
+    <string name="hint_username">Username</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_passwordlama">Password lama</string>
+    <string name="hint_passwordbaru">Password baru</string>
+    <string name="hint_passwordlagi">Ketik password lagi</string>
+    <string name="hint_passwordganti">Ganti Data</string>
+    <string name="hint_up">Upload Foto</string>
+    <string name="hint_cancel">Batal</string>
+    <string name="hint_tukarpoin">Tukar Poin</string>
+    <string name="hint_nama">Nama Lengkap</string>
+    <string name="hint_company">Alamat Email</string>
+    <string name="hint_address">Alamat Pengiriman</string>
+    <string name="hint_phone">No. Telpon</string>
+    <string name="btn_login">LOGIN</string>
+    <string name="btn_register">DAFTAR</string>
+    <string name="nama">Nama Lengkap</string>
+    <string name="type_here">Cari . . .</string>
+    <string name="emptylv">Anda tidak punya order</string>
+    <string name="emptylv2">Anda tidak punya riwayat</string>
+    <string name="drawer_close">Close</string>
+    <string name="load_more">Tambah data</string>
+    <string name="tutup">Tutup</string>
+    <string name="close">Tutup</string>
+</resources>

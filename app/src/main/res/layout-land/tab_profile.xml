@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00f7ff">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#00f7ff">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:layout_gravity="center"
+                android:layout_centerInParent="true"
+                android:visibility="gone"
+                android:background="#00f7ff"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="20dp"
+                android:id="@+id/LLCd">
+
+                <EditText
+                    android:id="@+id/tfNamper"
+                    android:hint="@string/hint_company"
+                    android:textAlignment="center"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/input_login"
+                    android:maxLength="45"
+                    android:layout_gravity="center"
+                    android:visibility="visible"
+                    android:layout_marginTop="7dp"
+                    android:inputType="textEmailAddress" />
+
+                <EditText
+                    android:id="@+id/tfAlamper"
+                    android:textAlignment="center"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/input_login"
+                    android:layout_marginTop="7dp"
+                    android:hint="@string/hint_address"
+                    android:maxLength="45" />
+
+                <EditText
+                    android:id="@+id/tfTelp"
+                    android:hint="@string/hint_phone"
+                    android:textAlignment="center"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/input_login"
+                    android:maxLength="12"
+                    android:layout_marginTop="7dp"
+                    android:inputType="number" />
+
+                <EditText
+                    android:id="@+id/tfPasswordlama"
+                    android:hint="@string/hint_passwordlama"
+                    android:inputType="textPassword"
+                    android:textAlignment="center"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/input_login"
+                    android:layout_marginTop="7dp"
+                    android:maxLength="15" />
+
+                <EditText
+                    android:id="@+id/tfPasswordbaru"
+                    android:hint="@string/hint_passwordbaru"
+                    android:inputType="textPassword"
+                    android:textAlignment="center"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/input_login"
+                    android:layout_marginTop="7dp"
+                    android:maxLength="15" />
+
+                <EditText
+                    android:id="@+id/tfPasswordlagi"
+                    android:hint="@string/hint_passwordlagi"
+                    android:inputType="textPassword"
+                    android:textAlignment="center"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/input_login"
+                    android:layout_marginTop="7dp"
+                    android:maxLength="15" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal">
+
+                    <Button
+                        android:id="@+id/btca"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dip"
+                        android:background="@color/btn_login_bg"
+                        android:text="@string/hint_cancel"
+                        android:textColor="@color/btn_login"
+                        android:layout_gravity="center"
+                        android:visibility="visible"
+                        android:layout_marginRight="10dp" />
+
+                    <Button
+                        android:id="@+id/btgp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dip"
+                        android:background="@color/btn_login_bg"
+                        android:text="@string/hint_passwordganti"
+                        android:textColor="@color/btn_login"
+                        android:layout_gravity="center"
+                        android:visibility="visible" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:orientation="vertical"
+                android:layout_marginTop="5dp"
+                android:visibility="visible"
+                android:id="@+id/LLD">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+                    <com.android.volley.toolbox.NetworkImageView
+                        android:layout_width="128dp"
+                        android:layout_height="128dp"
+                        android:id="@+id/iv"
+                        android:layout_marginTop="5dp"
+                        android:layout_centerHorizontal="true"
+                        android:visibility="visible"
+                        android:layout_gravity="center"
+                        android:maxWidth="128dp"
+                        android:maxHeight="128dp"
+                        android:background="@drawable/ic_profile" />
+
+                    <ImageButton
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:id="@+id/ib"
+                        android:layout_gravity="right|bottom"
+                        android:background="@drawable/camera" />
+                </FrameLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Large Text"
+                    android:id="@+id/tvUsername"
+                    android:layout_gravity="center_horizontal"
+                    android:textStyle="bold"
+                    android:textSize="30dp"
+                    android:layout_marginBottom="9dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Large Text"
+                    android:id="@+id/tvNama"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="8dp" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageView4"
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/ic_action_company" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="Large Text"
+                        android:id="@+id/tvPerusahaan"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="7dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageView5"
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/ic_action_address" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="Large Text"
+                        android:id="@+id/tvAlamat"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="6dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageView2"
+                        android:background="@drawable/ic_action_wa" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageView3"
+                        android:background="@drawable/ic_action_sms"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="Large Text"
+                        android:id="@+id/tvNo"
+                        android:layout_gravity="center" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btCp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dip"
+                    android:background="@color/btn_login_bg"
+                    android:text="@string/hint_passwordganti"
+                    android:textColor="@color/btn_login"
+                    android:layout_gravity="center"
+                    android:visibility="visible"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginLeft="50dp" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

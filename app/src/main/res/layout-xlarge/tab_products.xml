@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <ListView
+        android:id="@+id/lvitem"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/list_divider"
+        android:dividerHeight="1dp"
+        android:listSelector="@drawable/list_row_selector"
+        android:visibility="visible"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerInParent="true"
+        android:layout_above="@+id/LL">
+
+    </ListView>
+
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pb"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:indeterminate="false"
+        android:visibility="visible" />
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/LL"
+        android:background="?attr/colorPrimary"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btHot"
+            android:background="@drawable/ic_action_hot"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true" />
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="5dp"
+            android:layout_toRightOf="@+id/btHot"
+            android:layout_toLeftOf="@+id/btFru"
+            android:layout_centerVertical="true">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btVeg"
+                android:background="@drawable/ic_action_veg"
+                android:layout_gravity="center" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="false"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="5dp"
+            android:id="@+id/frameLayout"
+            android:layout_toRightOf="@+id/btFru"
+            android:layout_toLeftOf="@+id/btAll"
+            android:layout_centerVertical="true">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btMeat"
+                android:background="@drawable/ic_action_meat"
+                android:layout_gravity="center" />
+        </FrameLayout>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btFru"
+            android:background="@drawable/ic_action_fruit"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="7dp" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btAll"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/ic_action_all"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="5dp" />
+    </RelativeLayout>
+
+</RelativeLayout>

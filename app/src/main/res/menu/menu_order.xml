@@ -1,0 +1,22 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="sastroman.suplierkomoditas.MainActivity">
+
+
+    <item
+        android:id="@+id/action_plus"
+        android:title="@string/action_plus"
+        android:visible="true"
+        android:orderInCategory="200"
+        android:icon="@drawable/ic_action_plus"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_shipping"
+        android:title="@string/action_shipping"
+        android:visible="true"
+        android:orderInCategory="300"
+        android:icon="@drawable/ic_action_shiiping"
+        app:showAsAction="always" />
+</menu>

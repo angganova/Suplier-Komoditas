@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="sastroman.suplierkomoditas.SignUp"
+    android:background="@drawable/background">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/scrollView3" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_gravity="center">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp">
+
+                <ImageView
+                    android:layout_width="128dp"
+                    android:layout_height="128dp"
+                    android:id="@+id/iv"
+                    android:layout_marginTop="5dp"
+                    android:layout_centerHorizontal="true"
+                    android:visibility="visible"
+                    android:layout_gravity="center"
+                    android:maxHeight="128dp"
+                    android:maxWidth="128dp"
+                    android:src="@drawable/profile" />
+
+                <ImageButton
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/ib"
+                    android:layout_gravity="right|bottom"
+                    android:background="@drawable/camera" />
+            </FrameLayout>
+
+            <EditText
+                android:id="@+id/tfUsername"
+                android:hint="@string/hint_username"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColor="@color/input_login"
+                android:textAlignment="center"
+                android:maxLength="10" />
+
+            <EditText
+                android:id="@+id/tfPassword"
+                android:hint="@string/hint_password"
+                android:inputType="textPassword"
+                android:textAlignment="center"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColor="@color/input_login"
+                android:layout_marginTop="5dp"
+                android:maxLength="15" />
+
+            <EditText
+                android:id="@+id/tfNama"
+                android:hint="@string/hint_nama"
+                android:textAlignment="center"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColor="@color/input_login"
+                android:maxLength="25"
+                android:layout_marginTop="5dp" />
+
+            <EditText
+                android:id="@+id/tfNamper"
+                android:hint="@string/hint_company"
+                android:textAlignment="center"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColor="@color/input_login"
+                android:maxLength="45"
+                android:layout_gravity="center"
+                android:visibility="visible"
+                android:layout_marginTop="5dp"
+                android:inputType="textEmailAddress" />
+
+            <EditText
+                android:id="@+id/tfAlamper"
+                android:textAlignment="center"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColor="@color/input_login"
+                android:layout_marginTop="5dp"
+                android:hint="@string/hint_address"
+                android:maxLength="45" />
+
+            <EditText
+                android:id="@+id/tfTelp"
+                android:hint="@string/hint_phone"
+                android:textAlignment="center"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColor="@color/input_login"
+                android:maxLength="12"
+                android:layout_marginTop="5dp"
+                android:inputType="number" />
+
+            <Button
+                android:id="@+id/btSignup"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@color/btn_login_bg"
+                android:text="@string/btn_register"
+                android:textColor="@color/btn_login" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
